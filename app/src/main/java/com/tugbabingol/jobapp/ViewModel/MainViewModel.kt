@@ -7,4 +7,8 @@ class MainViewModel(val respository : MainRepository):ViewModel() {
     constructor():this(MainRepository())
 
     fun loadLocation()=respository.location
+
+    fun loadCategory()=respository.category
+
+    fun loadData() = respository.items
 }
